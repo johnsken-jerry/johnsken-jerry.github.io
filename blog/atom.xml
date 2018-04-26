@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://johnsken-jerry.github.io/blog/"/>
-  <updated>2018-04-22T07:47:10.000Z</updated>
+  <updated>2018-04-26T15:47:57.853Z</updated>
   <id>https://johnsken-jerry.github.io/blog/</id>
   
   <author>
@@ -17,38 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>小程序分包加载 router not found</title>
-    <link href="https://johnsken-jerry.github.io/blog/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%88%86%E5%8C%85%E5%8A%A0%E8%BD%BD-router-not-found/"/>
-    <id>https://johnsken-jerry.github.io/blog/小程序分包加载-router-not-found/</id>
-    <published>2020-02-26T05:08:22.000Z</published>
-    <updated>2018-04-22T07:47:10.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><br><p>小程序分包加载文档：<a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/subpackages.html" target="_blank">https://mp.weixin.qq.com/debug/wxadoc/dev/framework/subpackages.html</a></p><br></blockquote><p>按文档操作后出现下面的警告⚠️</p><p><img height="132" src="https://static.oschina.net/uploads/space/2018/0226/141151_FuTK_2701299.png" width="780"></p><p>之前用原生的完全可以，而使用wepy框架后发现编译后就不能分包加载了</p><p>然而上github找了一个插件&nbsp; <a href="https://github.com/chen1zee/gulp-tools-for-wepy" target="_blank">https://github.com/chen1zee/gulp-tools-for-wepy</a></p><p>用来解决一些wepy与原生小程序新特性间存在的问题。</p><p>配置packages.config.js后启动gulp-</p><ul><br>    <li>在 wepy cli 启动后并首次编译完成后，另外新开一个终端 项目目录下<code>gulp watch</code></li><br>    <li>如只想gulp 处理一次(如 生产版) 可 gulp change-json</li><br></ul><p>这样就解决了问题了。</p><p>—————————————————————————————————–</p><p>现在wepy更新至 1.7.0&nbsp;了，已经支持分包加载了。</p><p><img height="769" src="https://static.oschina.net/uploads/space/2018/0226/142014_x7tk_2701299.png" width="974"></p><p>更新日志：<a href="https://tencent.github.io/wepy/document.html#/changelog" target="_blank">https://tencent.github.io/wepy/document.html#/changelog</a></p><p>所以需要查看项目 package.json 的 <code>wepy</code> 版本</p><p><img height="131" src="https://static.oschina.net/uploads/space/2018/0226/142123_ca6d_2701299.png" width="357"></p><p>版本为1.7.0以上就行了。</p><h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a><h1>解决方法</h1></h1><p>如果低于 1.7.0 的升级下版本</p><pre><code class="language-bash">npm install --save wepy </code></pre><p>&nbsp;</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;&lt;br&gt;&lt;p&gt;小程序分包加载文档：&lt;a href=&quot;https://mp.weixin.qq.com/debug/wxadoc/dev/framework/subpackages.html&quot; target=&quot;_blank&quot;&gt;https://mp.weixi
-      
-    
-    </summary>
-    
-      <category term="微信小程序" scheme="https://johnsken-jerry.github.io/blog/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-    
-      <category term="小程序" scheme="https://johnsken-jerry.github.io/blog/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-      <category term="分包加载" scheme="https://johnsken-jerry.github.io/blog/tags/%E5%88%86%E5%8C%85%E5%8A%A0%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Nodejs环境搭建</title>
-    <link href="https://johnsken-jerry.github.io/blog/Environment-construction-to-nodejs/"/>
-    <id>https://johnsken-jerry.github.io/blog/Environment-construction-to-nodejs/</id>
-    <published>2018-04-22T05:34:38.000Z</published>
-    <updated>2018-04-22T07:45:01.346Z</updated>
+    <link href="https://johnsken-jerry.github.io/blog/Nodejs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/Environment-construction-to-nodejs/"/>
+    <id>https://johnsken-jerry.github.io/blog/Nodejs环境搭建/Environment-construction-to-nodejs/</id>
+    <published>2018-04-02T05:34:38.000Z</published>
+    <updated>2018-04-26T15:47:57.853Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>服务器系统版本：CentOS 7.0</p></blockquote><h1 id="安装最新版本的nodejs环境"><a href="#安装最新版本的nodejs环境" class="headerlink" title="安装最新版本的nodejs环境"></a>安装最新版本的nodejs环境</h1><p>在官网下载最新版本的nodejs <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a>  </p><h3 id="以下载最新的稳定版-v-8-11-1-到本地-为例"><a href="#以下载最新的稳定版-v-8-11-1-到本地-为例" class="headerlink" title="以下载最新的稳定版 v 8.11.1  到本地 为例"></a>以下载最新的稳定版 v 8.11.1  到本地 为例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://nodejs.org/dist/v8.11.1/node-v8.11.1-linux-x64.tar.xz</span><br></pre></td></tr></table></figure><h3 id="下载完成后-将其解压"><a href="#下载完成后-将其解压" class="headerlink" title="下载完成后, 将其解压"></a>下载完成后, 将其解压</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar xvJf node-v8.11.1-linux-x64.tar.xz</span><br></pre></td></tr></table></figure><h3 id="将解压的Node-js-目录移动到-usr-local-目录下"><a href="#将解压的Node-js-目录移动到-usr-local-目录下" class="headerlink" title="将解压的Node.js 目录移动到 /usr/local 目录下"></a>将解压的<code>Node.js</code> 目录移动到 <a href="">/usr/local</a> 目录下</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv node-v8.11.1-linux-x64 /usr/local/node-v8</span><br></pre></td></tr></table></figure><h3 id="配置-node-软链接到-bin-目录"><a href="#配置-node-软链接到-bin-目录" class="headerlink" title="配置 node 软链接到 /bin 目录"></a>配置 <code>node</code> 软链接到 <a href="">/bin</a> 目录</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s /usr/local/node-v8/bin/node /bin/node</span><br></pre></td></tr></table></figure><h1 id="配置和使用-npm"><a href="#配置和使用-npm" class="headerlink" title="配置和使用 npm"></a>配置和使用 npm</h1><h3 id="配置-npm"><a href="#配置-npm" class="headerlink" title="配置 npm"></a>配置 npm</h3><p><code>npm</code> 是 <code>Node.js</code> 的包管理和分发工具。它可以让 <code>Node.js</code> 开发者能够更加轻松的共享代码和共用代码片段<br>下载 <code>node</code> 的压缩包中已经包含了 <code>npm</code> , 我们只需要将其软链接到 <a href="">bin</a> 目录下即可<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s /usr/local/node-v8/bin/npm /bin/npm</span><br></pre></td></tr></table></figure></p><h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p>将 <a href="">/usr/local/node-v8/bin</a> 目录添加到 <code>$PATH</code> 环境变量中可以方便地使用通过 <code>npm</code> 全局安装的第三方工具<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &apos;export PATH=/usr/local/node-v8/bin:$PATH&apos; &gt;&gt; /etc/profile</span><br></pre></td></tr></table></figure></p><blockquote><p>ps: 此时虽然配置成功了，但系统环境仍未生效</p></blockquote><p>生效环境变量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure></p><h3 id="使用npm"><a href="#使用npm" class="headerlink" title="使用npm"></a>使用npm</h3><p>通过 <code>npm</code> 安装进程管理模块 <code>forever</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install forever -g</span><br></pre></td></tr></table></figure></p><h1 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h1><p>到了这里，恭喜你已经在服务器上成功搭建了Node.js的运行环境！</p>]]></content>
     
@@ -74,11 +47,38 @@
   </entry>
   
   <entry>
+    <title>小程序分包加载 router not found</title>
+    <link href="https://johnsken-jerry.github.io/blog/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%88%86%E5%8C%85%E5%8A%A0%E8%BD%BD-router-not-found/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%88%86%E5%8C%85%E5%8A%A0%E8%BD%BD-router-not-found/"/>
+    <id>https://johnsken-jerry.github.io/blog/小程序分包加载-router-not-found/小程序分包加载-router-not-found/</id>
+    <published>2018-02-26T05:08:22.000Z</published>
+    <updated>2018-04-26T15:47:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><br><p>小程序分包加载文档：<a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/subpackages.html" target="_blank">https://mp.weixin.qq.com/debug/wxadoc/dev/framework/subpackages.html</a></p><br></blockquote><p>按文档操作后出现下面的警告⚠️</p><p><img height="132" src="https://static.oschina.net/uploads/space/2018/0226/141151_FuTK_2701299.png" width="780"></p><p>之前用原生的完全可以，而使用wepy框架后发现编译后就不能分包加载了</p><p>然而上github找了一个插件&nbsp; <a href="https://github.com/chen1zee/gulp-tools-for-wepy" target="_blank">https://github.com/chen1zee/gulp-tools-for-wepy</a></p><p>用来解决一些wepy与原生小程序新特性间存在的问题。</p><p>配置packages.config.js后启动gulp-</p><ul><br>    <li>在 wepy cli 启动后并首次编译完成后，另外新开一个终端 项目目录下<code>gulp watch</code></li><br>    <li>如只想gulp 处理一次(如 生产版) 可 gulp change-json</li><br></ul><p>这样就解决了问题了。</p><p>—————————————————————————————————–</p><p>现在wepy更新至 1.7.0&nbsp;了，已经支持分包加载了。</p><p><img height="769" src="https://static.oschina.net/uploads/space/2018/0226/142014_x7tk_2701299.png" width="974"></p><p>更新日志：<a href="https://tencent.github.io/wepy/document.html#/changelog" target="_blank">https://tencent.github.io/wepy/document.html#/changelog</a></p><p>所以需要查看项目 package.json 的 <code>wepy</code> 版本</p><p><img height="131" src="https://static.oschina.net/uploads/space/2018/0226/142123_ca6d_2701299.png" width="357"></p><p>版本为1.7.0以上就行了。</p><h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a><h1>解决方法</h1></h1><p>如果低于 1.7.0 的升级下版本</p><pre><code class="language-bash">npm install --save wepy </code></pre><p>&nbsp;</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;&lt;br&gt;&lt;p&gt;小程序分包加载文档：&lt;a href=&quot;https://mp.weixin.qq.com/debug/wxadoc/dev/framework/subpackages.html&quot; target=&quot;_blank&quot;&gt;https://mp.weixi
+      
+    
+    </summary>
+    
+      <category term="微信小程序" scheme="https://johnsken-jerry.github.io/blog/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+      <category term="小程序" scheme="https://johnsken-jerry.github.io/blog/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+      <category term="分包加载" scheme="https://johnsken-jerry.github.io/blog/tags/%E5%88%86%E5%8C%85%E5%8A%A0%E8%BD%BD/"/>
+    
+  </entry>
+  
+  <entry>
     <title>解决Mac soft quit unexpectedly</title>
-    <link href="https://johnsken-jerry.github.io/blog/%E8%A7%A3%E5%86%B3Mac-soft-quit-unexpectedly/"/>
-    <id>https://johnsken-jerry.github.io/blog/解决Mac-soft-quit-unexpectedly/</id>
+    <link href="https://johnsken-jerry.github.io/blog/%E8%A7%A3%E5%86%B3Mac-soft-quit-unexpectedly/%E8%A7%A3%E5%86%B3Mac-soft-quit-unexpectedly/"/>
+    <id>https://johnsken-jerry.github.io/blog/解决Mac-soft-quit-unexpectedly/解决Mac-soft-quit-unexpectedly/</id>
     <published>2018-02-23T05:27:45.000Z</published>
-    <updated>2018-04-22T07:45:10.000Z</updated>
+    <updated>2018-04-26T15:47:01.071Z</updated>
     
     <content type="html"><![CDATA[<p><strong>QQ quit unexpectedly.</strong></p><p>今天不知道干了什么，QQ一直意外退出，搞得无法正常工作。</p><p><img height="159" src="https://static.oschina.net/uploads/space/2018/0223/171125_xPX9_2701299.png" width="433"></p><p>Apple 官方给出的解释</p><p><img height="833" src="https://static.oschina.net/uploads/space/2018/0223/171502_tH20_2701299.png" width="1037"></p><p>在没看官方之前已经尝试过这些方法了，依然无效。</p><p>想起之前在开发过程中也有类似的情况，那时候的解决方法是<strong>清理数据</strong>。</p><p>瞬间明白了是怎么一回事了（自己操作了一些东西，导致用户数据受影响了）</p><p>打开Finder下的Library（资源库）</p><p><img height="437" src="https://static.oschina.net/uploads/space/2018/0223/172804_gUI6_2701299.png" width="544"></p><p>为了方便，可以直接在Library目录下搜索qq号</p><p><img height="63" src="https://static.oschina.net/uploads/space/2018/0223/173126_yCcI_2701299.png" width="694"></p><p>把文件夹名字是你的qq的都删除掉即可。</p><p>数据路径：/Users/xxxx/Library/Containers/com.tencent.qq/Data</p><p>&nbsp;</p><p>ps：如果以上方法还没有解决问题，最直接去磁盘工具（慎用）</p><p><img height="890" src="https://static.oschina.net/uploads/space/2018/0226/101359_NGZ3_2701299.png" width="1584"></p><p><img height="574" src="https://static.oschina.net/uploads/space/2018/0226/101444_qiJR_2701299.png" width="925"></p><p><img height="561" src="https://static.oschina.net/uploads/space/2018/0226/102006_fYzR_2701299.png" width="924"></p><p>或者 用命令修复</p><pre><code>sudo diskutil repairPermissions /Volumes/要修复的分区</code></pre><p>&nbsp;</p><p>&nbsp;</p>]]></content>
     

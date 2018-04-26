@@ -9,7 +9,7 @@
     <meta name="description" content="前端神棍">
     <meta name="author" content="Jerry Lam">
     <meta name="keyword" content="react, angluar, blog, vue, nodejs, jerry, johnsken, 前端工程师, web前端工程师简历, web前端个人简历, ，前端开发">
-    <link rel="canonical" href="https://johnsken-jerry.github.io/blog/blog/archives/2018/02/">
+    <link rel="canonical" href="https://johnsken-jerry.github.io/blog/blog/小程序分包加载-router-not-found/小程序分包加载-router-not-found/">
     <link rel="shortcut icon" href="https://static.oschina.net/uploads/user/1350/2701299_100.jpeg?t=1486891206000">
     <link rel="alternate" type="application/atom+xml" title="Jerry&#39;s Blog" href="/atom.xml">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -21,7 +21,7 @@
 
     <title>
         
-        一 个 全 干 攻 城 狮 - Jerry&#39;s Blog
+        小程序分包加载 router not found｜一 个 全 干 攻 城 狮 - Jerry&#39;s Blog
         
     </title>
 
@@ -116,7 +116,7 @@
 <!-- hack iOS CSS :active style -->
 <body ontouchstart="" class="animated fadeIn">
 <header>
-  <nav class="navbar navbar-default header-navbar" id="nav-top" data-ispost = "false" data-istags="false" data-ishome = "false" >
+  <nav class="navbar navbar-default header-navbar" id="nav-top" data-ispost = "true" data-istags="false" data-ishome = "false" >
     <div class="container-fluid">
       <div class="navbar-header page-scroll">
         <button type="button" class="navbar-toggle" data-toggle="collapse" aria-expanded="false"  data-target="#website_navbar">
@@ -157,99 +157,161 @@
 
 
   
-</header>
+    <style>
+       .intro-header {
+          background-image: url('/img/sky-clouds-moon-horizon.jpg?h=350&amp;auto=compress&amp;cs=tinysrgb');
+      }
+    </style>
 
-
-<!-- Main Content -->
-<style>
-  header.intro-header {
-      background-image: url('/img/sky-clouds-moon-horizon.jpg?h=350&amp;auto=compress&amp;cs=tinysrgb');
-  }
-</style>
-
-<header class="intro-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading text-center">
-                    <h1>Archives</h1>
-                    <span class="post-subtitle">Cool?</span>
+    <div class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                    <div class="site-heading">
+                        <h1>小程序分包加载 router not found</h1>
+                        
+                        
+                          <span class="meta">
+                               <span class="meta-item">博主: Jerry Lam</span>
+                               <span class="meta-item">创建于: Feb 26, 2018</span>
+                               
+                                 <span class="meta-item">更新于: Apr 26, 2018</span>
+                               
+                          </span>
+                          <div class="tags text-center">
+                              分类: 
+                              <a class="tag" href="/blog/categories/#微信小程序"
+                                 title="微信小程序">微信小程序</a>
+                              
+                          </div>
+                          <div class="tags text-center">
+                              标签: 
+                              <a class="tag" href="/blog/tags/#小程序"
+                                 title="小程序">小程序</a>
+                              
+                              <a class="tag" href="/blog/tags/#分包加载"
+                                 title="分包加载">分包加载</a>
+                              
+                          </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+  
 </header>
 
 
-
-<article class="container archive">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Main Content -->
+<!-- post.ejs -->
+<article>
+    <div class="container">
+      <div class="col-lg-8 col-lg-offset-1 col-sm-9">
           
-                
-                
-                
-                    
-                    
-                    <div data-date="2018">
-                      <span class="fa fa-heart"></span>
-                      <a href="/blog/archives/2018" class="archive-year">2018</a>
-                    </div>
-                
-
-                
-                    
-                    <div class="archive-month" data-date="201804">
-                         04
-                    </div>
-                
-                <div>
-                          <h4>
-                              <span class="archive-post-time">04-02</span>
-                              <span class="archive-post-title">
-                                <a href="/blog/Nodejs环境搭建/Environment-construction-to-nodejs/" class="archive-post-item">Nodejs环境搭建</a>
-                              </span>
-                          </h4>
-                          
-                </div>
+            <div class="text-center"><div class="addthis_inline_share_toolbox">
+  <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5adc2979e8319dc7" async = "async" ></script>
+</div>
+</div><hr>
           
-                
-                
-                
-
-                
-                    
-                    <div class="archive-month" data-date="201802">
-                         02
-                    </div>
-                
-                <div>
-                          <h4>
-                              <span class="archive-post-time">02-26</span>
-                              <span class="archive-post-title">
-                                <a href="/blog/小程序分包加载-router-not-found/小程序分包加载-router-not-found/" class="archive-post-item">小程序分包加载 router not found</a>
-                              </span>
-                          </h4>
-                          
-                </div>
           
-                
-                
-                
+          <blockquote><br><p>小程序分包加载文档：<a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/subpackages.html" target="_blank">https://mp.weixin.qq.com/debug/wxadoc/dev/framework/subpackages.html</a></p><br></blockquote>
 
-                
-                <div>
-                          <h4>
-                              <span class="archive-post-time">02-23</span>
-                              <span class="archive-post-title">
-                                <a href="/blog/解决Mac-soft-quit-unexpectedly/解决Mac-soft-quit-unexpectedly/" class="archive-post-item">解决Mac soft quit unexpectedly</a>
-                              </span>
-                          </h4>
-                          
-                </div>
+<p>按文档操作后出现下面的警告⚠️</p>
+
+<p><img height="132" src="https://static.oschina.net/uploads/space/2018/0226/141151_FuTK_2701299.png" width="780"></p>
+
+<p>之前用原生的完全可以，而使用wepy框架后发现编译后就不能分包加载了</p>
+
+<p>然而上github找了一个插件&nbsp; <a href="https://github.com/chen1zee/gulp-tools-for-wepy" target="_blank">https://github.com/chen1zee/gulp-tools-for-wepy</a></p>
+
+<p>用来解决一些wepy与原生小程序新特性间存在的问题。</p>
+
+<p>配置packages.config.js后启动gulp-</p>
+
+<ul><br>    <li>在 wepy cli 启动后并首次编译完成后，另外新开一个终端 项目目录下<code>gulp watch</code></li><br>    <li>如只想gulp 处理一次(如 生产版) 可 gulp change-json</li><br></ul>
+
+<p>这样就解决了问题了。</p>
+
+<p>—————————————————————————————————–</p>
+
+<p>现在wepy更新至 1.7.0&nbsp;了，已经支持分包加载了。</p>
+
+<p><img height="769" src="https://static.oschina.net/uploads/space/2018/0226/142014_x7tk_2701299.png" width="974"></p>
+
+<p>更新日志：<a href="https://tencent.github.io/wepy/document.html#/changelog" target="_blank">https://tencent.github.io/wepy/document.html#/changelog</a></p>
+
+<p>所以需要查看项目 package.json 的 <code>wepy</code> 版本</p>
+
+<p><img height="131" src="https://static.oschina.net/uploads/space/2018/0226/142123_ca6d_2701299.png" width="357"></p>
+
+<p>版本为1.7.0以上就行了。</p>
+
+<h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a><h1>解决方法</h1></h1><p>如果低于 1.7.0 的升级下版本</p>
+
+<pre>
+<code class="language-bash">npm install --save wepy </code></pre>
+
+<p>&nbsp;</p>
+
+
           
-        </div>
+          <hr>
+          <ul class="pager">
+              
+              <li class="previous">
+                  <a href="/blog/Nodejs环境搭建/Environment-construction-to-nodejs/" data-toggle="tooltip" data-placement="left"
+                     title="Nodejs环境搭建">&larr; 上一篇</a>
+              </li>
+              
+              
+              <li class="next">
+                  <a href="/blog/解决Mac-soft-quit-unexpectedly/解决Mac-soft-quit-unexpectedly/" data-toggle="tooltip" data-placement="top"
+                     title="解决Mac soft quit unexpectedly">下一篇&rarr;</a>
+              </li>
+              
+          </ul>
+        
+  <br>
+  
+  <!-- disqus start -->
+  <div class="comment">
+    <div id="disqus_thread"  class="disqus-thread"></div>
+      <script>
+      var disqus_shortname = 'jerrys-blog-3';
+      
+      var disqus_url = 'https://johnsken-jerry.github.io/blog/小程序分包加载-router-not-found/小程序分包加载-router-not-found/';
+      
+      (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+  <!-- disqus end -->
+  
+
+  
+  </div>
+
+
+        
+  <div class="hidden-xs col-sm-3 toc-col">
+    <div class="toc-wrap">
+        目录
+        
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#解决方法"><span class="toc-number">1.</span> <span class="toc-text">解决方法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">2.</span> <span class="toc-text">解决方法</span></a></li></ol>
+        
     </div>
+  </div>
+
+
+      </div>
+  </div>
 </article>
 
 <!-- Footer -->
