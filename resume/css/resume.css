@@ -92,11 +92,9 @@ header {
 address {
   overflow-y: hidden; }
 
-.phone {
-  display: none; }
-  @media print {
-    .phone {
-      display: block; } }
+@media print {
+  .phone {
+    display: block; } }
 
 @media print {
   .wechat {
@@ -343,7 +341,9 @@ h3 {
 body {
   font-family: 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
   background: #e0e0e0;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  width: 960px;
+  margin: 0 auto; }
 
 a,
 strong {
